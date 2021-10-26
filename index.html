@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
+	<title>ListApp</title>
 	<link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -14,10 +14,10 @@
 		<p><em> Double click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em></p>
 
 		<form name="toDoList">
-			<input type="text" name="ListItem" id="input"/>
+			<input id="input" type="text" name="ListItem"/>
 		</form>
 
-		<div onclick="newItem()" id="button">Add</div>
+		<div id="button" onclick="newLiItem()">Add</div>
 		<br/>
 		<ol id="list"></ol>
   </div>
