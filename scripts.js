@@ -1,0 +1,6 @@
+/* List items are created as li elements, with input value determined by
+the value entered into the input id. List items will append the value of
+the input*/
+let li = $('<li></li>');
+   let inputValue = $('#input').val();
+   li.append(inputValue);
