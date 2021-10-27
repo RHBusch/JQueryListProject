@@ -27,15 +27,21 @@ let li = $('<li></li>');
       li.addClass('delete');
         };
     $('#list').sortable()
-  }
-  /*When I try this within the newLiItem function I don't see
-  any results. When I push it outside of the function the
-  new item will be added for about half a second and then
-  vanish. Not sure what's happening here.
+  };
 
   $('#input').on('keydown',function(event){
-    if(event.which === 13){
-      $('#button').click();
-    }
-  });
-  */
+     if(event.which === 13){
+       $('#button').click();
+       li.append(inputValue);
+       $('#list').append(li);
+     }
+   });
+
+
+
+
+ /*$('#input').keypress(function(event){
+                  var keycode = (event.keyCode ? event.keyCode : event.which);
+                  if(keycode == '13'){
+                      $('#button').click();
+                  }}) */
