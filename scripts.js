@@ -31,6 +31,7 @@ let li = $('<li></li>');
 
   $('#input').on('keydown',function(event){
      if(event.which === 13){
+       event.preventDefault(); 
        $('#button').click();
        li.append(inputValue);
        $('#list').append(li);
